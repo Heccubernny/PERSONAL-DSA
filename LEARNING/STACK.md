@@ -39,10 +39,13 @@ def stack_search(stack, element):
         print("Element is found at position", pos)
  
 stack = []
-stack_push(stack)
+stack_push(stack) 
 stack_pop(stack)
 stack_push(stack)
-stack_peek(stack)
-stack_search(stack, 2)
-stack_search(stack, 6)
+stack_peek(stack) // Element on stack top : 4
+stack_search(stack, 2) // Element is found at position: 3
+stack_search(stack, 6) //Element not found
 ```
+Time Complexity: O(n)
+
+Auxiliary Space: O(n) 
