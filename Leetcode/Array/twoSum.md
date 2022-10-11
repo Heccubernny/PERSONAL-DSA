@@ -54,13 +54,13 @@ Using One Pass HashTable
 ```python
 class Solution:
     def twoSum(self, nums, target):
-        hm = {} <!-- Create an empty hashmap to store-->
+        hm = {} # Create an empty hashmap to store
         n = len(nums)
-        for i in range(n): <!-- iterate over nums using it's index number-->
-            c = target - nums[i] <!-- 22 - 2 = 20 -->
-            if c in hm: <!-- C is not in the hashmap --> <!--if the current C exist in the hashmap-->
-                return [i, hm[c]] <!-- skip index of 0 --> <!--The sum is found and it return the indices (two index)immediately -->
-            hm[nums[i]] = i <!-- save our array nums index and value into hashmap in form of "value": index i.e "2": 0 --> <!-- Follow the process to iterate -->
+        for i in range(n): # iterate over nums using it's index number
+            c = target - nums[i] # 22 - 2 = 20
+            if c in hm: # C is not in the hashmap  #if the current C exist in the hashmap
+                return [i, hm[c]] #skip index of 0 . -The sum is found and it return the indices (two index)immediately
+            hm[nums[i]] = i # save our array nums index and value into hashmap in form of "value": index i.e "2": 0 Follow the process to iterate
 
 
 
