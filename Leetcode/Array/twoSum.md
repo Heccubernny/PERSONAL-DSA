@@ -16,7 +16,7 @@ Language Used: Python 3.10
 Big(O):
 
 - Time Complexity: O(n^2)
-- Space Complexity: O(n)
+- Space Complexity: O(1)
 
 Problem: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -26,7 +26,7 @@ You can return the answer in any order
 -
 
 Solution:
-
+```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
        n: int = len(nums)
@@ -41,6 +41,7 @@ res: int = rt.twoSum([2,7,11,15], 9)
 
 print(res)
 
+```
 
 <!-- Other suggestion -->
 
@@ -50,6 +51,7 @@ We can make use of an another algorithm that is less than O(n^2) time complexity
 
 Using One Pass HashTable
 
+```python
 class Solution:
     def twoSum(self, nums, target):
         hm = {} <!-- Create an empty hashmap to store-->
@@ -67,3 +69,4 @@ r = Solution()
 res = r.twoSum([2, 7, 11, 15], 22)
 
 print(res)
+```
